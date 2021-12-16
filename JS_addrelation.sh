@@ -35,7 +35,7 @@ toDab=$3
 
 curl -X POST $host -H 'Content-Type: application/json' -d '{"method":"addRelation","params":{"userId":"'${userId}'","userCredentials": "'${userCred}'","licenseTypeCode":1,"fromDabId":'${fromDab}',"toDabId":'${toDab}'}}' > ./log-JS_addrelation.txt
 cat ./log-JS_addrelation.txt
-
+printf “\n”
 
 
 
